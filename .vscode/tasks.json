@@ -1,0 +1,24 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "qemu",
+            "type": "shell",
+            // "command": "cd ${workspaceFolder}/ape/misc/qemu/ && ./run.sh -g 3 -d 1122 -l",
+            "command": "cd ${workspaceFolder} && make qemu-gdb",
+            "presentation": {
+                "echo": true,
+                "clear": true,
+                "group": "qemu"
+            },
+            "isBackground": true,
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
