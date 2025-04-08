@@ -6,7 +6,6 @@
         {
             "label": "qemu",
             "type": "shell",
-            // "command": "cd ${workspaceFolder}/ape/misc/qemu/ && ./run.sh -g 3 -d 1122 -l",
             "command": "cd ${workspaceFolder} && make qemu-gdb",
             "presentation": {
                 "echo": true,
